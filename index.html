@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Praxeis 4:12 Cafe | Coffee • Community • Blessings</title>
+  <meta name="description" content="A cozy Filipino café offering familiar favorites, sweet little treats, and something delicious to share.">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Praxeis 4:12 Cafe">
+  <meta property="og:description" content="A cozy Filipino café offering familiar favorites, sweet little treats, and something delicious to share.">
+  <meta property="og:type" content="website">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  
+  <script>document.documentElement.classList.add('js');</script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="header-left">
+        <svg class="coffee-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M17 8h1a4 4 0 1 1 0 8h-1"></path>
+          <path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"></path>
+          <line x1="6" y1="2" x2="6" y2="4"></line>
+          <line x1="10" y1="2" x2="10" y2="4"></line>
+          <line x1="14" y1="2" x2="14" y2="4"></line>
+        </svg>
+        <span class="wordmark">Praxeis 4:12 Cafe</span>
+      </div>
+      <div class="header-right">
+        <nav class="header-nav">
+          <a href="#menu" class="is-current">Our menu</a>
+          <a href="#qr" class="desktop-only">Menu QR</a>
+        </nav>
+        <span class="tagline">COFFEE • COMMUNITY • BLESSINGS</span>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero">
+      <div class="hero-inner">
+        <div class="hero-text fade-up">
+          <p class="eyebrow">FEEL THE CUP OF OVERFLOWING BLESSINGS</p>
+          <h1>Good coffee.<br>A grateful heart.</h1>
+          <p class="muted-desc">Find a little comfort in your cup. Explore familiar favorites, sweet little treats, and something delicious to share.</p>
+          <a href="#menu" class="scroll-link">FIND YOUR EVERYDAY FAVORITE &darr;</a>
+        </div>
+        <div class="hero-image-wrapper fade-up">
+          <img src="assets/latte.webp" alt="A cup of latte art and a croissant on a wooden café table" class="hero-img">
+          <div class="logo-badge">
+            <img src="assets/logo.png" alt="Praxeis 4:12 Cafe Logo" class="logo-img" onerror="this.parentElement.style.display='none';">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="menu" class="menu-section">
+      <div class="menu-header fade-up">
+        <div class="menu-header-left">
+          <p class="eyebrow">SOMETHING FOR EVERY CRAVING</p>
+          <h2>The menu</h2>
+        </div>
+        <div class="menu-header-right">
+          <span class="pill">SAMPLE MENU</span>
+          <p class="muted-note">Illustrative offerings &amp; prices in Philippine pesos (₱).</p>
+        </div>
+      </div>
+
+      <div class="category-tabs-wrapper sticky">
+        <nav class="category-tabs" id="category-tabs">
+          <!-- Populated by JS -->
+        </nav>
+      </div>
+
+      <div class="menu-notes fade-up">
+        <p>Coffee &amp; lattes: enjoy hot or iced, unless noted.</p>
+        <p>✦ A little recommendation</p>
+      </div>
+
+      <div class="menu-grid" id="menu-grid">
+        <!-- Populated by JS -->
+      </div>
+      <noscript><p class="muted-note">Please turn on JavaScript to see the menu.</p></noscript>
+    </section>
+
+    <section class="notes-strip fade-up">
+      <div class="notes-card">
+      <div class="note-card">
+        <h3>A cup, your way.</h3>
+        <p>Sample add-ons: extra espresso +₱30 &middot; oat milk +₱35.<br>Prefer it less sweet? Just say the word.</p>
+      </div>
+      <div class="note-card">
+        <h3>A thoughtful little note.</h3>
+        <p>Have an allergy or dietary preference? Please check ingredients and preparation with the café before ordering.</p>
+      </div>
+      </div>
+    </section>
+
+    <section id="qr" class="qr-section fade-up">
+      <div class="qr-card">
+        <p class="eyebrow">TAKE THE MENU WITH YOU</p>
+        <h2>Scan to open our menu</h2>
+        <p class="muted-desc">Point your phone camera at the code to view this menu anywhere.</p>
+        
+        <div id="qrcode-container" class="qr-code-wrapper" role="img" aria-label="QR code linking to the Praxeis 4:12 Cafe menu"></div>
+        <p id="qr-url" class="qr-url"></p>
+        <div id="qr-fallback" class="qr-fallback" style="display: none;">
+          <a href="#" id="fallback-link">View Menu Online</a>
+        </div>
+
+        <div class="qr-actions">
+          <button id="download-qr" class="action-btn">DOWNLOAD PNG</button>
+          <button id="print-qr" class="action-btn">PRINT TABLE CARD</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="footer-left">
+        <h2>Come for a cup. Stay for a moment.</h2>
+        <p class="footer-brand">Praxeis 4:12 Cafe</p>
+      </div>
+      <div class="footer-right">
+        <span class="gold-star">✦</span>
+        <p class="eyebrow-footer">FEEL THE CUP OF OVERFLOWING BLESSINGS</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>This is a sample menu. Offerings and prices are illustrative, not the café's confirmed menu.</p>
+      <p>A LITTLE PAUSE, A LITTLE BLESSING.</p>
+    </div>
+  </footer>
+
+  <!-- QRCode.js pinned version from cdnjs -->
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <script defer src="script.js"></script>
+</body>
+</html>
